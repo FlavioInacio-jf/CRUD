@@ -1,11 +1,14 @@
 .btn-purple {
+  display: inline-block;
+
+
   font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
   color: var(--color-white);
 
   background: var(--color-purple);
-  border-color: transparent;
-
-  cursor: pointer;
+  border: 0.1rem solid transparent;
 
   transition: background-color 0.3s ease-in-out;
   padding: 0.5rem;

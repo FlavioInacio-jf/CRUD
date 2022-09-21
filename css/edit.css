@@ -1,0 +1,17 @@
+.title {
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  padding: 0 1.6rem;
+}
+
+.content {
+  max-width: 50rem;
+  height: 100%;
+
+  margin: 0 auto;
+}
