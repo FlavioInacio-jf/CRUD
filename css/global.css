@@ -1,0 +1,24 @@
+*, :after :before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  --color-white: #FFF;
+  --color-purple: #5821f9;
+
+  --color-gray-500: #eaeaea;
+  --color-green-999: #1e3535;
+}
+
+html {
+  -webkit-text-size-adjust: 62.5%;
+  -ms-text-size-adjust: 62.5%;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  font: 400 1rem 'Inter', sans-serif;
+}

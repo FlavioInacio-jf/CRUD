@@ -1,0 +1,62 @@
+.btn-purple {
+  font-size: 1.6rem;
+  color: var(--color-white);
+
+  background: var(--color-purple);
+  border-color: transparent;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease-in-out;
+  padding: 0.5rem;
+}
+
+.btn-purple:hover {
+
+  background: transparent;
+  border-color: var(--color-purple);
+  color: var(--color-purple);
+
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+
+
+/*TABLE STYLES*/
+.table {
+  width: 100%;
+  margin-top: 2rem;
+  table-layout: auto;
+}
+
+.table thead {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-white);
+
+  background: var(--color-green-999);
+}
+
+.table thead th,
+.table tbody td {
+  padding: 1rem;
+  white-space: nowrap;
+}
+
+.table tbody {
+  font-size: 1.4rem;
+}
+
+.table tbody tr:nth-child(even) {
+  background: var(--color-gray-500);
+}
+
+
