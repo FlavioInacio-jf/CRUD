@@ -22,3 +22,8 @@ html {
 body {
   font: 400 1rem 'Inter', sans-serif;
 }
+
+
+.form-group {
+  display: flex;
+}
