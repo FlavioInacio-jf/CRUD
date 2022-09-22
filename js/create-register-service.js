@@ -1,8 +1,9 @@
 import { BASE_URL } from '../contants/endpoint.constant.js';
+import { TOKEN } from '../contants/token.constant.js';
 
 const form = document.getElementById('form-create');
 
-export const createRegisterService = async (event) => {
+export const createRegisterService = (event) => {
   event.preventDefault();
 
   const { nome,genero, status, email } = event.target;
@@ -13,9 +14,19 @@ export const createRegisterService = async (event) => {
   formData.set('status', status.value);
   formData.set('email', email.value);
 
-  await fetch(`${BASE_URL}`, { method: 'POST', body: formData })
 
-  window.location.replace('/');
+    fetch(`${BASE_URL}`,
+    { method: 'POST',
+      body: formData,
+      headers: {
+        'Authorization': `Bearer ${TOKEN}`,
+      }
+    }).then(()=> {
+      window.alert('Produto cadastrado com sucesso!');
+      window.location.replace('/');
+    }).catch(()=> {
+      window.alert('Erro ao cadastrar produto.');
+    })
 }
 
 form.addEventListener('submit', createRegisterService);

@@ -20,7 +20,7 @@ export const renderRegister = (register) => {
   tr.appendChild(email);
 
   buttonDelete.addEventListener("click", async() =>  await deleteRegisterService(register.id));
-  action.addEventListener("click", () => window.location.replace(`/edit.html?${register.id}`));
+  buttonEdit.addEventListener("click", () => window.location.replace(`/edit.html?${register.id}`));
 
   action.appendChild(buttonEdit);
   action.appendChild(buttonDelete);
