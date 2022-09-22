@@ -104,3 +104,28 @@ body {
   cursor: pointer;
   padding: 0.5rem;
 }
+
+
+.loading-container {
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+
+  background: rgba( 255, 255, 255, 0.25 );
+  backdrop-filter: blur( 0.4rem );
+  -webkit-backdrop-filter: blur( 0.4rem );
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.loading-container .loading-content {
+  font-size: 3.2rem;
+  font-weight: bold;
+}

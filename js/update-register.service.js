@@ -2,6 +2,7 @@ import { getSingleRegisterService } from './get-single-register.service.js';
 import { BASE_URL } from '../contants/endpoint.constant.js';
 import { TOKEN } from '../contants/token.constant.js';
 
+const loading = document.querySelector('.loading-container');
 const form = document.getElementById('form-edit');
 const name = document.getElementById('nome');
 const genero = document.getElementById('genero');
@@ -12,11 +13,15 @@ const location = window.location.search;
 const search = new URLSearchParams(location);
 const register_id = search.get('id');
 
+loading.style.display = 'flex';
+
 const register = await getSingleRegisterService(register_id);
 name.value = register.name;
 genero.value = register.gender;
 status.value = register.status;
 email.value = register.email;
+
+loading.style.display = 'none';
 
 export const updateRegisterService = (id) => async (event) => {
   event.preventDefault();
