@@ -22,29 +22,34 @@
       <div class="container">
         <div class="content">
           <h2 class="title">EDIT</h2>
-          <form class="form-edit">
+          <form id="form-edit">
             <div class="form-group">
               <label for="nome">Nome: </label>
-              <input type="text" id="nome" required />
+              <input type="text" id="nome" name='nome' required />
             </div>
             <div class="form-group">
-              <label for="email">Genero: </label>
-              <input type="text" id="email" required />
+              <label for="genero">Genero: </label>
+              <select type="text" id="genero" name='genero' required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
             </div>
             <div class="form-group">
-              <label for="email">Email: </label>
-              <input type="text" id="email" required />
+              <label for="status">Status: </label>
+              <select type="text" id="status" name='status' required>
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+              </select>
             </div>
             <div class="form-group">
-              <label for="email">Status: </label>
-              <input type="text" id="email" required />
+              <label for="email" name='email'>E-mail: </label>
+              <input type="email" id="email" required />
             </div>
-
             <button type='submit' class="btn-submit">Editar</button>
           </form>
         </div>
       </div>
     </main>
-    <script type="module" defer src="./js/update-register-service.js"></script>
+    <script type="module" defer src="./js/update-register.service.js"></script>
   </body>
 </html>

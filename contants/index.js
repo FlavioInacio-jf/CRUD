@@ -1,2 +1,2 @@
-export * from './endpoint.constant';
-export * from './token.constant';
+export * from './endpoint.constant.js';
+export * from './token.constant.js';

@@ -1,4 +1,4 @@
-import { deleteRegisterService } from './delete-register-service.js';
+import { deleteRegisterService } from './delete-register.service.js';
 
 export const renderRegister = (register) => {
   const tr = document.createElement('tr');
@@ -20,7 +20,7 @@ export const renderRegister = (register) => {
   tr.appendChild(email);
 
   buttonDelete.addEventListener("click", async() =>  await deleteRegisterService(register.id));
-  buttonEdit.addEventListener("click", () => window.location.replace(`/edit.html?${register.id}`));
+  buttonEdit.addEventListener("click", () => window.location.replace(`/edit.html?id=${register.id}`));
 
   action.appendChild(buttonEdit);
   action.appendChild(buttonDelete);
